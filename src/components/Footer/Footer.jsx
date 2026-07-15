@@ -167,7 +167,7 @@ function Footer() {
 
           {/* Column 2: Quick Links */}
           <div className="flex flex-col gap-5">
-            <h3 className="text-green-700 font-bold text-base tracking-wider relative after:content-[''] after:block after:w-8 after:h-0.5 after:bg-green-700 after:mt-2">
+            <h3 className="text-gold-400 font-bold text-base tracking-wider relative after:content-[''] after:block after:w-8 after:h-0.5 after:bg-gold-400 after:mt-2">
               QUICK LINKS
             </h3>
             <ul className="flex flex-col gap-3">
@@ -199,7 +199,7 @@ function Footer() {
 
           {/* Column 3: Our Services */}
           <div className="flex flex-col gap-5">
-            <h3 className="text-green-700 font-bold text-base tracking-wider relative after:content-[''] after:block after:w-8 after:h-0.5 after:bg-green-700 after:mt-2">
+            <h3 className="text-gold-400 font-bold text-base tracking-wider relative after:content-[''] after:block after:w-8 after:h-0.5 after:bg-gold-400 after:mt-2">
               OUR SERVICES
             </h3>
             <ul className="grid grid-cols-1 gap-2.5">
@@ -230,7 +230,7 @@ function Footer() {
 
           {/* Column 4: Contact Info */}
           <div className="flex flex-col gap-5">
-            <h3 className="text-green-700 font-bold text-base tracking-wider relative after:content-[''] after:block after:w-8 after:h-0.5 after:bg-green-700 after:mt-2">
+            <h3 className="text-gold-400 font-bold text-base tracking-wider relative after:content-[''] after:block after:w-8 after:h-0.5 after:bg-gold-400 after:mt-2">
               CONTACT INFO
             </h3>
             <ul className="flex flex-col gap-4 text-sm text-ink-dark">

@@ -103,7 +103,6 @@ function Home() {
         <div className="max-w-7xl mx-auto relative z-10 text-center">
           {/* Gold Badge */}
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-green-700/10 border border-green-700/25 mb-6 animate-pulse">
-            <span className="h-2 w-2 rounded-full bg-green-700"></span>
             <span className="text-green-700 text-xs md:text-sm font-semibold tracking-wider uppercase">
               Trusted Wealth Advisors
             </span>

@@ -34,14 +34,13 @@ function Terms() {
           <div>
             <p className="text-sm text-gray-400 font-semibold mb-6">Last Updated: July 15, 2026</p>
             <p>
-              Welcome to <strong>sbsfinserv.in</strong> (hereinafter referred to as the "Website"). The Website is owned, managed, and operated by <strong>SBS Financial Services</strong> (hereinafter referred to as "SBS", "Company", "We", "Us", or "Our"), having its principal place of business in Ahmedabad, Gujarat, India.
+              Welcome to <strong>sbsfinserv.in</strong>. The Website is owned, managed, and operated by <strong>SBS Financial Services</strong>, having its principal place of business in Ahmedabad, Gujarat, India.
             </p>
             <p className="mt-4">
               By accessing, browsing, or using this Website, you acknowledge that you have read, understood, and agree to be bound by these Terms of Use, Disclaimer, and our Privacy Policy. If you do not agree with any part of these terms, please discontinue using the Website immediately.
             </p>
           </div>
 
-          <hr className="border-gray-100" />
 
           {/* Section 1 */}
           <div className="space-y-3">
@@ -59,7 +58,7 @@ function Terms() {
             </ul>
           </div>
 
-          <hr className="border-gray-100" />
+
 
           {/* Section 2 */}
           <div className="space-y-3">
@@ -85,7 +84,7 @@ function Terms() {
             </ul>
           </div>
 
-          <hr className="border-gray-100" />
+
 
           {/* Section 3 */}
           <div className="space-y-3">
@@ -98,7 +97,7 @@ function Terms() {
             </p>
           </div>
 
-          <hr className="border-gray-100" />
+
 
           {/* Section 4 */}
           <div className="space-y-3">
@@ -113,7 +112,7 @@ function Terms() {
             </ul>
           </div>
 
-          <hr className="border-gray-100" />
+
 
           {/* Section 5 */}
           <div className="space-y-3">
@@ -128,7 +127,7 @@ function Terms() {
             </ul>
           </div>
 
-          <hr className="border-gray-100" />
+
 
           {/* Section 6 */}
           <div className="space-y-3">
@@ -138,7 +137,7 @@ function Terms() {
             </p>
           </div>
 
-          <hr className="border-gray-100" />
+
 
           {/* Section 7 */}
           <div className="space-y-3">
@@ -148,7 +147,7 @@ function Terms() {
             </p>
           </div>
 
-          <hr className="border-gray-100" />
+
 
           {/* Section 8 */}
           <div className="space-y-3">
@@ -158,7 +157,7 @@ function Terms() {
             </p>
           </div>
 
-          <hr className="border-gray-100" />
+
 
           {/* Section 9 */}
           <div className="space-y-3">
@@ -168,7 +167,7 @@ function Terms() {
             </p>
           </div>
 
-          <hr className="border-gray-100" />
+
 
           {/* Section 10 */}
           <div className="space-y-3">

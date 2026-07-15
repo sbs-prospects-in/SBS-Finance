@@ -116,7 +116,7 @@ function About() {
           className="max-w-7xl mx-auto relative z-10 text-center flex flex-col items-center"
         >
           <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-green-700/10 border border-green-700/25 text-green-700 text-xs md:text-sm font-bold tracking-widest uppercase mb-8 shadow-sm animate-pulse">
-            Trusted Investment Advisors
+            Trusted Wealth Advisors
           </div>
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-ink-dark tracking-tight leading-tight max-w-4xl mx-auto mb-6">
             About <span className="text-green-700 font-extrabold relative after:content-[''] after:absolute after:bottom-1 after:left-0 after:w-full after:h-1 after:bg-green-700/40">SBS Financials</span>

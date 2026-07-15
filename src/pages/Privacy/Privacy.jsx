@@ -34,14 +34,13 @@ function Privacy() {
           <div>
             <p className="text-sm text-gray-400 font-semibold mb-6">Effective Date: July 15, 2026</p>
             <p>
-              At <strong>SBS Finserv</strong> ("Company", "we", "our", or "us"), we are committed to protecting your privacy and maintaining the confidentiality of the personal information you share with us through our website <a href="https://www.sbsfinserv.in" className="text-green-800 hover:text-gold-500 font-medium transition-colors">https://www.sbsfinserv.in</a> ("Website").
+              At <strong>SBS Finserv</strong>, we are committed to protecting your privacy and maintaining the confidentiality of the personal information you share with us through our website <a href="https://www.sbsfinserv.in" className="text-green-800 hover:text-gold-500 font-medium transition-colors">https://www.sbsfinserv.in</a>.
             </p>
             <p className="mt-4">
               By accessing or using our Website, you agree to the collection and use of your information in accordance with this Privacy Policy.
             </p>
           </div>
 
-          <hr className="border-gray-100" />
 
           {/* Section 1 */}
           <div className="space-y-3">
@@ -64,7 +63,7 @@ function Privacy() {
             </div>
           </div>
 
-          <hr className="border-gray-100" />
+
 
           {/* Section 2 */}
           <div className="space-y-3">
@@ -81,7 +80,7 @@ function Privacy() {
             </ul>
           </div>
 
-          <hr className="border-gray-100" />
+
 
           {/* Section 3 */}
           <div className="space-y-3">
@@ -99,7 +98,7 @@ function Privacy() {
             </ul>
           </div>
 
-          <hr className="border-gray-100" />
+
 
           {/* Section 4 */}
           <div className="space-y-3">
@@ -117,7 +116,7 @@ function Privacy() {
             </ul>
           </div>
 
-          <hr className="border-gray-100" />
+
 
           {/* Section 5 */}
           <div className="space-y-3">
@@ -131,7 +130,7 @@ function Privacy() {
             </ul>
           </div>
 
-          <hr className="border-gray-100" />
+
 
           {/* Section 6 */}
           <div className="space-y-3">
@@ -144,7 +143,7 @@ function Privacy() {
             </p>
           </div>
 
-          <hr className="border-gray-100" />
+
 
           {/* Section 7 */}
           <div className="space-y-3">
@@ -154,7 +153,7 @@ function Privacy() {
             </p>
           </div>
 
-          <hr className="border-gray-100" />
+
 
           {/* Section 8 */}
           <div className="space-y-3">
@@ -164,7 +163,7 @@ function Privacy() {
             </p>
           </div>
 
-          <hr className="border-gray-100" />
+
 
           {/* Section 9 */}
           <div className="space-y-3">
@@ -182,7 +181,7 @@ function Privacy() {
             </ul>
           </div>
 
-          <hr className="border-gray-100" />
+
 
           {/* Section 10 */}
           <div className="space-y-3">
@@ -196,7 +195,7 @@ function Privacy() {
             </ul>
           </div>
 
-          <hr className="border-gray-100" />
+
 
           {/* Section 11 */}
           <div className="space-y-3">
@@ -206,7 +205,7 @@ function Privacy() {
             </p>
           </div>
 
-          <hr className="border-gray-100" />
+
 
           {/* Section 12 */}
           <div className="space-y-3">
