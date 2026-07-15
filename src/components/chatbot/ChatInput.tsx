@@ -26,10 +26,12 @@ export default function ChatInput({ onSend, isLoading }: ChatInputProps) {
     return () => window.removeEventListener('resize', handleResize)
   }, [])
 
-  // Auto-focus input on load
+  // Auto-focus input on load (Desktop only to prevent triggering mobile virtual keyboard)
   useEffect(() => {
-    inputRef.current?.focus()
-  }, [])
+    if (!isMobile) {
+      inputRef.current?.focus()
+    }
+  }, [isMobile])
 
   return (
     <div className={`bg-white px-5 pt-3 border-t border-slate-100 shrink-0 ${isMobile ? 'rounded-none pb-7' : 'rounded-b-[1.3rem] pb-4'}`}>
