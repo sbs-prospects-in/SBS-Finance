@@ -4,6 +4,13 @@ import * as Icons from 'lucide-react';
 import { ROUTES } from '../../constants/routes';
 import { motion } from 'framer-motion';
 import { FaLinkedin, FaFacebook, FaInstagram, FaXTwitter, FaYoutube } from 'react-icons/fa6';
+import founderImg from '../../../img/founder.jpeg';
+import teamImg from '../../assets/team.png';
+import aboutBanner from '../../assets/about_banner.jpeg';
+import sbsLogo from '../../assets/sbs_financials_logo-removebg-preview.png';
+
+
+
 
 // Stat counter sub-component for premium scroll feel
 function StatItem({ value, label, suffix = '' }) {
@@ -67,7 +74,7 @@ function StatItem({ value, label, suffix = '' }) {
       <div className="text-4xl md:text-5xl font-bold text-gold-400 mb-2 font-sans tracking-tight">
         {formattedDisplay}{suffix}
       </div>
-      <div className="text-gray-300 text-sm md:text-base font-medium tracking-wide">
+      <div className="text-white/80 text-sm md:text-base font-medium tracking-wide">
         {label}
       </div>
     </div>
@@ -95,7 +102,7 @@ function About() {
   return (
     <div className="bg-white">
       {/* 1. Hero Section */}
-      <section className="relative bg-gradient-to-br from-green-950 via-green-900 to-green-950 text-white pt-32 pb-24 md:pt-40 md:pb-32 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      <section className="relative bg-green-950 text-ink-dark pt-32 pb-24 md:pt-40 md:pb-32 px-4 sm:px-6 lg:px-8 overflow-hidden border-b border-green-700/10">
         {/* Abstract Gold Background Decor */}
         <div className="absolute inset-0 opacity-10 pointer-events-none">
           <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-gold-400 blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
@@ -108,13 +115,13 @@ function About() {
           transition={{ duration: 0.6 }}
           className="max-w-7xl mx-auto relative z-10 text-center flex flex-col items-center"
         >
-          <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gold-400/10 border border-gold-400/25 text-gold-400 text-xs md:text-sm font-bold tracking-widest uppercase mb-8 shadow-sm animate-pulse">
+          <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-green-700/10 border border-green-700/25 text-green-700 text-xs md:text-sm font-bold tracking-widest uppercase mb-8 shadow-sm animate-pulse">
             Trusted Investment Advisors
           </div>
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight leading-tight max-w-4xl mx-auto mb-6">
-            About <span className="text-gold-400 font-extrabold relative after:content-[''] after:absolute after:bottom-1 after:left-0 after:w-full after:h-1 after:bg-gold-400/40">SBS Financials</span>
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-ink-dark tracking-tight leading-tight max-w-4xl mx-auto mb-6">
+            About <span className="text-green-700 font-extrabold relative after:content-[''] after:absolute after:bottom-1 after:left-0 after:w-full after:h-1 after:bg-green-700/40">SBS Financials</span>
           </h1>
-          <p className="text-gray-300 text-base md:text-xl leading-relaxed max-w-2xl mx-auto mb-10">
+          <p className="text-ink-muted text-base md:text-xl leading-relaxed max-w-2xl mx-auto mb-10">
             Together We Create
           </p>
         </motion.div>
@@ -142,9 +149,15 @@ function About() {
             </p>
           </motion.div>
           <motion.div variants={itemVariants} className="lg:w-1/2 w-full">
-            <div className="w-full aspect-video bg-green-100/50 rounded-card border border-green-700/10 flex items-center justify-center shadow-sm">
-              <Icons.Image className="text-green-700/20 w-16 h-16" />
-              <span className="sr-only">Company Photo Container</span>
+            <div className="relative w-full aspect-video rounded-card border border-green-700/10 overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-350 bg-green-50">
+              <img src={aboutBanner} alt="Who We Are" className="w-full h-full object-cover" />
+              <div className="absolute inset-0 bg-black/45 flex flex-col items-center justify-center p-6 text-center">
+                <img src={sbsLogo} alt="SBS Financial Services" className="w-40 md:w-48 h-auto mb-3 drop-shadow-md" />
+                <div className="w-16 h-0.5 bg-gold-400 mb-3 rounded-full"></div>
+                <p className="text-white text-base md:text-lg font-bold tracking-widest uppercase drop-shadow-sm font-sans">
+                  Together We Create
+                </p>
+              </div>
             </div>
           </motion.div>
         </motion.div>
@@ -159,8 +172,7 @@ function About() {
           <div className="bg-white rounded-card border border-green-700/5 shadow-sm p-8 md:p-12 flex flex-col md:flex-row gap-12 items-center md:items-start">
             <div className="md:w-1/3 flex flex-col items-center">
               <div className="w-48 h-48 rounded-full bg-green-50 border-4 border-gold-400/20 flex items-center justify-center mb-6 shadow-md overflow-hidden">
-                <Icons.User className="text-green-700/20 w-24 h-24" />
-                <span className="sr-only">Founder Photo Container</span>
+                <img src={founderImg} alt="Urval Shah - Founder" className="w-full h-full object-cover" />
               </div>
               <div className="flex gap-3 flex-wrap justify-center">
                 <a href="https://www.linkedin.com/company/sbs-financials/" target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-full bg-green-100 flex items-center justify-center text-green-700 hover:bg-gold-400 hover:text-white transition-colors cursor-pointer" aria-label="LinkedIn">
@@ -198,7 +210,7 @@ function About() {
       </section>
 
       {/* 4. Stats Bar */}
-      <section className="bg-green-950 border-y border-gold-400/15 py-12">
+      <section className="bg-green-700 border-y border-gold-400/15 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 divide-x divide-gold-400/10">
             <StatItem value="6" label="Years Experience" suffix="+" />
@@ -251,8 +263,7 @@ function About() {
             </div>
             <div className="bg-white p-8 rounded-card border border-green-700/5 shadow-sm">
               <div className="w-full h-80 md:h-96 bg-green-50 rounded-xl mb-8 flex items-center justify-center border border-green-700/10 overflow-hidden">
-                <Icons.Users className="text-green-700/20 w-24 h-24" />
-                <span className="sr-only">Team Photo Container</span>
+                <img src={teamImg} alt="SBS Financials Team" className="w-full h-full object-cover" />
               </div>
               <p className="text-ink-muted text-body-lg text-center max-w-4xl mx-auto leading-relaxed">
                 At SBS Financial Services, our team is driven by a shared passion for helping clients grow, manage, and protect their financial assets with confidence. With expertise in financial planning, investment strategies, and wealth management, we focus on delivering personalized attention, practical solutions, and meaningful financial guidance tailored to every client’s goals. Our collaborative approach, commitment to client success, and focus on long-term relationships make us a trusted partner for individuals and families working towards a stronger financial future.
@@ -334,28 +345,28 @@ function About() {
       </section>
 
       {/* 9. Mission & Vision */}
-      <section className="section-pad bg-green-950 text-white relative overflow-hidden">
+      <section className="section-pad bg-green-950 text-ink-dark relative overflow-hidden border-t border-gold-400/10">
         {/* Background Decor */}
         <div className="absolute top-0 right-0 w-64 h-64 bg-gold-400/10 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
         <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/5 rounded-full blur-3xl transform -translate-x-1/2 translate-y-1/2 pointer-events-none"></div>
-
+ 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div className="bg-white/5 backdrop-blur-sm p-10 rounded-card border border-gold-400/20 hover:bg-white/10 transition-colors duration-300">
-              <div className="w-16 h-16 bg-gold-400/20 rounded-full flex items-center justify-center text-gold-400 mb-8 border border-gold-400/30">
+            <div className="bg-white p-10 rounded-card border border-gold-400/25 shadow-card hover:-translate-y-1 transition-all duration-300">
+              <div className="w-16 h-16 bg-gold-400/10 rounded-full flex items-center justify-center text-green-700 mb-8 border border-gold-400/30">
                 <Icons.Rocket size={32} />
               </div>
-              <h3 className="text-3xl font-bold mb-6 tracking-tight">Our Mission</h3>
-              <p className="text-gray-300 leading-relaxed text-lg">
+              <h3 className="text-3xl font-bold mb-6 tracking-tight text-green-700">Our Mission</h3>
+              <p className="text-ink-muted leading-relaxed text-lg">
                 To deliver smart, transparent, and personalized financial solutions that help individuals and families grow with confidence and achieve long-term financial security.
               </p>
             </div>
-            <div className="bg-white/5 backdrop-blur-sm p-10 rounded-card border border-gold-400/20 hover:bg-white/10 transition-colors duration-300">
-              <div className="w-16 h-16 bg-gold-400/20 rounded-full flex items-center justify-center text-gold-400 mb-8 border border-gold-400/30">
+            <div className="bg-white p-10 rounded-card border border-gold-400/25 shadow-card hover:-translate-y-1 transition-all duration-300">
+              <div className="w-16 h-16 bg-gold-400/10 rounded-full flex items-center justify-center text-green-700 mb-8 border border-gold-400/30">
                 <Icons.Eye size={32} />
               </div>
-              <h3 className="text-3xl font-bold mb-6 tracking-tight">Our Vision</h3>
-              <p className="text-gray-300 leading-relaxed text-lg">
+              <h3 className="text-3xl font-bold mb-6 tracking-tight text-green-700">Our Vision</h3>
+              <p className="text-ink-muted leading-relaxed text-lg">
                 To create a future where every individual and family feels financially empowered through personalized guidance, trusted relationships, and innovative wealth solutions.
               </p>
             </div>

@@ -41,7 +41,7 @@ function StatItem({ value, label, prefix = '', suffix = '' }) {
       <div className="text-3xl md:text-4xl lg:text-5xl font-bold text-gold-400 mb-2 font-sans tracking-tight">
         {prefix}{formattedDisplay}{suffix}
       </div>
-      <div className="text-gray-300 text-sm md:text-base font-medium tracking-wide">
+      <div className="text-white/80 text-sm md:text-base font-medium tracking-wide">
         {label}
       </div>
     </div>
@@ -93,7 +93,7 @@ function Home() {
   return (
     <div className="bg-white">
       {/* 1. Hero Section */}
-      <section className="relative bg-gradient-to-br from-green-950 via-green-900 to-green-950 text-white pt-32 pb-24 md:pt-40 md:pb-32 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      <section className="relative bg-green-950 text-ink-dark pt-32 pb-24 md:pt-40 md:pb-32 px-4 sm:px-6 lg:px-8 overflow-hidden border-b border-green-700/10">
         {/* Abstract Gold Background Decor */}
         <div className="absolute inset-0 opacity-10 pointer-events-none">
           <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-gold-400 blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
@@ -102,18 +102,18 @@ function Home() {
 
         <div className="max-w-7xl mx-auto relative z-10 text-center">
           {/* Gold Badge */}
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gold-400/10 border border-gold-400/25 mb-6 animate-pulse">
-            <span className="h-2 w-2 rounded-full bg-gold-400"></span>
-            <span className="text-gold-400 text-xs md:text-sm font-semibold tracking-wider uppercase">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-green-700/10 border border-green-700/25 mb-6 animate-pulse">
+            <span className="h-2 w-2 rounded-full bg-green-700"></span>
+            <span className="text-green-700 text-xs md:text-sm font-semibold tracking-wider uppercase">
               Trusted Wealth Advisors
             </span>
           </div>
 
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight leading-tight max-w-4xl mx-auto mb-6">
-            Ready to Build a Stronger <span className="text-gold-400 font-extrabold relative after:content-[''] after:absolute after:bottom-1 after:left-0 after:w-full after:h-1 after:bg-gold-400/40">Financial</span> Future?
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-ink-dark tracking-tight leading-tight max-w-4xl mx-auto mb-6">
+            Ready to Build a Stronger <span className="text-green-700 font-extrabold relative after:content-[''] after:absolute after:bottom-1 after:left-0 after:w-full after:h-1 after:bg-green-700/40">Financial</span> Future?
           </h1>
 
-          <p className="text-gray-300 text-base md:text-xl leading-relaxed max-w-2xl mx-auto mb-10">
+          <p className="text-ink-muted text-base md:text-xl leading-relaxed max-w-2xl mx-auto mb-10">
             Your financial goals deserve more than generic advice; they deserve a strategy built around you. At SBS Financial Services, we help individuals and families make confident financial decisions with smart planning, trusted guidance, and future focused investment solutions.
           </p>
 
@@ -122,7 +122,7 @@ function Home() {
               <span>Get Started Today</span>
               <Icons.ArrowUpRight size={18} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-250" />
             </Link>
-            <Link to={ROUTES.SERVICES} className="btn-ghost-gold w-full sm:w-auto px-8 py-3.5 flex items-center justify-center gap-2">
+            <Link to={ROUTES.SERVICES} className="btn-outline w-full sm:w-auto px-8 py-3.5 flex items-center justify-center gap-2">
               <span>Our Services</span>
               <Icons.Briefcase size={18} />
             </Link>
@@ -134,7 +134,7 @@ function Home() {
       </section>
 
       {/* 2. Stats Bar */}
-      <section className="bg-green-950 border-y border-gold-400/15 py-8 md:py-12">
+      <section className="bg-green-700 border-y border-gold-400/15 py-8 md:py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 divide-x divide-gold-400/10">
             <StatItem value="6" label="Years of Experience" suffix="+" />
@@ -304,10 +304,10 @@ function Home() {
       </section>
 
       {/* 8. Contact CTA Strip */}
-      <section className="bg-green-950 text-white py-16 px-4 md:px-8 text-center relative overflow-hidden border-t border-gold-400/10">
+      <section className="bg-green-950 text-ink-dark py-16 px-4 md:px-8 text-center relative overflow-hidden border-t border-gold-400/10">
         <div className="max-w-3xl mx-auto relative z-10">
           <h2 className="text-2xl md:text-3.5xl font-bold mb-4">Ready to Secure Your Wealth?</h2>
-          <p className="text-gray-300 mb-8 max-w-xl mx-auto leading-relaxed text-sm md:text-base">
+          <p className="text-ink-muted mb-8 max-w-xl mx-auto leading-relaxed text-sm md:text-base">
             Book a complimentary introductory advisory session with one of our certified wealth planning experts.
           </p>
           <Link to={ROUTES.CONTACT} className="btn-primary px-8 py-3.5 inline-flex items-center gap-2 group shadow-lg shadow-gold-400/10">

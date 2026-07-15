@@ -50,7 +50,7 @@ function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-350 ${isScrolled
-          ? 'bg-green-950 shadow-navbar py-3 border-b border-gold-400/10'
+          ? 'bg-green-700 shadow-navbar py-3 border-b border-gold-400/10'
           : 'bg-transparent py-5'
         }`}
     >
@@ -69,16 +69,22 @@ function Navbar() {
           <div className="hidden lg:flex items-center gap-8">
             <Link
               to={ROUTES.HOME} onClick={(e) => handleLinkClick(ROUTES.HOME, e)}
-              className={`text-sm font-semibold tracking-wide transition-colors duration-250 ${isLinkActive(ROUTES.HOME) ? 'text-gold-400' : 'text-white hover:text-gold-400'
-                }`}
+              className={`text-sm font-semibold tracking-wide transition-colors duration-250 ${
+                isScrolled
+                  ? (isLinkActive(ROUTES.HOME) ? 'text-gold-400 font-bold' : 'text-slate-50 hover:text-gold-400')
+                  : (isLinkActive(ROUTES.HOME) ? 'text-green-700 font-bold' : 'text-ink-dark hover:text-green-700')
+              }`}
             >
               Home
             </Link>
 
             <Link
               to={ROUTES.ABOUT} onClick={(e) => handleLinkClick(ROUTES.ABOUT, e)}
-              className={`text-sm font-semibold tracking-wide transition-colors duration-250 ${isLinkActive(ROUTES.ABOUT) ? 'text-gold-400' : 'text-white hover:text-gold-400'
-                }`}
+              className={`text-sm font-semibold tracking-wide transition-colors duration-250 ${
+                isScrolled
+                  ? (isLinkActive(ROUTES.ABOUT) ? 'text-gold-400 font-bold' : 'text-slate-50 hover:text-gold-400')
+                  : (isLinkActive(ROUTES.ABOUT) ? 'text-green-700 font-bold' : 'text-ink-dark hover:text-green-700')
+              }`}
             >
               About Us
             </Link>
@@ -95,8 +101,11 @@ function Navbar() {
                   handleLinkClick(ROUTES.SERVICES, e);
                   setIsServicesDropdownOpen(false);
                 }}
-                className={`flex items-center gap-1 text-sm font-semibold tracking-wide transition-colors duration-250 focus:outline-none cursor-pointer ${location.pathname.startsWith('/services') ? 'text-gold-400' : 'text-white hover:text-gold-400'
-                  }`}
+                className={`flex items-center gap-1 text-sm font-semibold tracking-wide transition-colors duration-250 focus:outline-none cursor-pointer ${
+                  isScrolled
+                    ? (location.pathname.startsWith('/services') ? 'text-gold-400 font-bold' : 'text-slate-50 hover:text-gold-400')
+                    : (location.pathname.startsWith('/services') ? 'text-green-700 font-bold' : 'text-ink-dark hover:text-green-700')
+                }`}
               >
                 Services
                 <ChevronDown size={14} className={`transition-transform duration-250 ${isServicesDropdownOpen ? 'rotate-180' : ''}`} />
@@ -109,16 +118,22 @@ function Navbar() {
 
             <Link
               to={ROUTES.CALCULATORS} onClick={(e) => handleLinkClick(ROUTES.CALCULATORS, e)}
-              className={`text-sm font-semibold tracking-wide transition-colors duration-250 ${isLinkActive(ROUTES.CALCULATORS) ? 'text-gold-400' : 'text-white hover:text-gold-400'
-                }`}
+              className={`text-sm font-semibold tracking-wide transition-colors duration-250 ${
+                isScrolled
+                  ? (isLinkActive(ROUTES.CALCULATORS) ? 'text-gold-400 font-bold' : 'text-slate-50 hover:text-gold-400')
+                  : (isLinkActive(ROUTES.CALCULATORS) ? 'text-green-700 font-bold' : 'text-ink-dark hover:text-green-700')
+              }`}
             >
               Calculators
             </Link>
 
             <Link
               to={ROUTES.CONTACT} onClick={(e) => handleLinkClick(ROUTES.CONTACT, e)}
-              className={`text-sm font-semibold tracking-wide transition-colors duration-250 ${isLinkActive(ROUTES.CONTACT) ? 'text-gold-400' : 'text-white hover:text-gold-400'
-                }`}
+              className={`text-sm font-semibold tracking-wide transition-colors duration-250 ${
+                isScrolled
+                  ? (isLinkActive(ROUTES.CONTACT) ? 'text-gold-400 font-bold' : 'text-slate-50 hover:text-gold-400')
+                  : (isLinkActive(ROUTES.CONTACT) ? 'text-green-700 font-bold' : 'text-ink-dark hover:text-green-700')
+              }`}
             >
               Contact Us
             </Link>
@@ -136,7 +151,7 @@ function Navbar() {
           <div className="flex lg:hidden">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-white hover:text-gold-400 focus:outline-none cursor-pointer p-2 rounded-md hover:bg-green-700/20"
+              className={`${isScrolled ? 'text-slate-50 hover:text-gold-400' : 'text-ink-dark hover:text-green-700'} focus:outline-none cursor-pointer p-2 rounded-md hover:bg-green-700/20`}
               aria-label="Toggle menu"
             >
               {isMobileMenuOpen ? <X size={26} /> : <Menu size={26} />}
@@ -162,7 +177,7 @@ function Navbar() {
           <img src={sbsLogo} alt="SBS Financials Logo" className="w-24 h-auto object-contain" />
           <button
             onClick={() => setIsMobileMenuOpen(false)}
-            className="text-white hover:text-gold-400 focus:outline-none cursor-pointer p-1 rounded-md"
+            className="text-slate-50 hover:text-gold-400 focus:outline-none cursor-pointer p-1 rounded-md"
           >
             <X size={20} />
           </button>
@@ -171,7 +186,7 @@ function Navbar() {
         <div className="flex flex-col gap-5 overflow-y-auto max-h-[calc(100vh-140px)]">
           <Link
             to={ROUTES.HOME} onClick={(e) => handleLinkClick(ROUTES.HOME, e)}
-            className={`text-base font-semibold py-1.5 transition-colors duration-250 ${isLinkActive(ROUTES.HOME) ? 'text-gold-400 border-l-2 border-gold-400 pl-2' : 'text-white hover:text-gold-400'
+            className={`text-base font-semibold py-1.5 transition-colors duration-250 ${isLinkActive(ROUTES.HOME) ? 'text-gold-400 border-l-2 border-gold-400 pl-2' : 'text-slate-50 hover:text-gold-400'
               }`}
           >
             Home
@@ -179,7 +194,7 @@ function Navbar() {
 
           <Link
             to={ROUTES.ABOUT} onClick={(e) => handleLinkClick(ROUTES.ABOUT, e)}
-            className={`text-base font-semibold py-1.5 transition-colors duration-250 ${isLinkActive(ROUTES.ABOUT) ? 'text-gold-400 border-l-2 border-gold-400 pl-2' : 'text-white hover:text-gold-400'
+            className={`text-base font-semibold py-1.5 transition-colors duration-250 ${isLinkActive(ROUTES.ABOUT) ? 'text-gold-400 border-l-2 border-gold-400 pl-2' : 'text-slate-50 hover:text-gold-400'
               }`}
           >
             About Us
@@ -189,7 +204,7 @@ function Navbar() {
           <div className="flex flex-col">
             <button
               onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
-              className={`flex items-center justify-between text-base font-semibold py-1.5 transition-colors duration-250 focus:outline-none cursor-pointer ${location.pathname.startsWith('/services') ? 'text-gold-400' : 'text-white hover:text-gold-400'
+              className={`flex items-center justify-between text-base font-semibold py-1.5 transition-colors duration-250 focus:outline-none cursor-pointer ${location.pathname.startsWith('/services') ? 'text-gold-400' : 'text-slate-50 hover:text-gold-400'
                 }`}
             >
               <span>Services</span>
@@ -203,7 +218,7 @@ function Navbar() {
               <div className="pl-4 mt-2 border-l border-gold-400/20 flex flex-col gap-3">
                 <Link
                   to={ROUTES.SERVICES}
-                  className="text-sm text-gray-300 hover:text-gold-400 py-1 transition-colors duration-250 font-medium"
+                  className="text-sm text-slate-300 hover:text-gold-400 py-1 transition-colors duration-250 font-medium"
                 >
                   All Services Overview
                 </Link>
@@ -223,7 +238,7 @@ function Navbar() {
                         }
                       }
                     }}
-                    className="text-sm text-gray-300 hover:text-gold-400 py-1 transition-colors duration-250"
+                    className="text-sm text-slate-300 hover:text-gold-400 py-1 transition-colors duration-250"
                   >
                     {service.title}
                   </Link>
@@ -234,7 +249,7 @@ function Navbar() {
 
           <Link
             to={ROUTES.CALCULATORS} onClick={(e) => handleLinkClick(ROUTES.CALCULATORS, e)}
-            className={`text-base font-semibold py-1.5 transition-colors duration-250 ${isLinkActive(ROUTES.CALCULATORS) ? 'text-gold-400 border-l-2 border-gold-400 pl-2' : 'text-white hover:text-gold-400'
+            className={`text-base font-semibold py-1.5 transition-colors duration-250 ${isLinkActive(ROUTES.CALCULATORS) ? 'text-gold-400 border-l-2 border-gold-400 pl-2' : 'text-slate-50 hover:text-gold-400'
               }`}
           >
             Calculators
@@ -242,7 +257,7 @@ function Navbar() {
 
           <Link
             to={ROUTES.CONTACT} onClick={(e) => handleLinkClick(ROUTES.CONTACT, e)}
-            className={`text-base font-semibold py-1.5 transition-colors duration-250 ${isLinkActive(ROUTES.CONTACT) ? 'text-gold-400 border-l-2 border-gold-400 pl-2' : 'text-white hover:text-gold-400'
+            className={`text-base font-semibold py-1.5 transition-colors duration-250 ${isLinkActive(ROUTES.CONTACT) ? 'text-gold-400 border-l-2 border-gold-400 pl-2' : 'text-slate-50 hover:text-gold-400'
               }`}
           >
             Contact Us

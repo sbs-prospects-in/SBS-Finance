@@ -100,8 +100,7 @@ function Contact() {
 
   return (
     <div className="bg-slate-50 min-h-screen">
-      {/* Top Banner */}
-      <section className="relative bg-gradient-to-br from-green-950 via-green-900 to-green-950 text-white py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      <section className="relative bg-green-950 text-ink-dark py-20 px-4 sm:px-6 lg:px-8 overflow-hidden border-b border-green-700/10">
         {/* Decorative Circles */}
         <div className="absolute inset-0 opacity-10 pointer-events-none">
           <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-gold-400 blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
@@ -115,7 +114,7 @@ function Contact() {
           className="max-w-4xl mx-auto relative z-10 text-center"
         >
           <h1 className="text-4xl md:text-5xl font-bold mb-4 font-sans tracking-tight">Get In Touch</h1>
-          <p className="text-gray-300 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
+          <p className="text-ink-muted text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
             Ready to start your investment journey? We're here to help you achieve your financial goals.
           </p>
         </motion.div>
@@ -181,7 +180,7 @@ function Contact() {
                 </div>
                 <div>
                   <h3 className="font-bold text-green-950 mb-2">Business Hours</h3>
-                  <p className="text-ink-muted text-sm mb-1">Mon - Sat: 10:00 AM - 8:00 PM</p>
+                  <p className="text-ink-muted text-sm mb-1">Mon - Sat: 10:00 AM - 7:00 PM</p>
                   <p className="text-ink-muted text-sm">Sun: On Advance Appointment Basis</p>
                 </div>
               </motion.div>

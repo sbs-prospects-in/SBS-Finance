@@ -3,11 +3,13 @@
 
 /* ── CSS Custom Properties ────────────────────────────── */
 :root {
-  --color-green-950: #012604;
-  --color-green-700: #126009;
-  --color-green-100: #E8F5E9;
-  --color-gold-400:  #EBCC5A;
-  --color-gold-600:  #D4AE3A;
+  --color-green-950: #D3C9BD;
+  --color-green-700: #423E3B;
+  --color-green-100: #F6F4F2;
+  --color-gold-400:  #B4986B;
+  --color-gold-600:  #AB9E8E;
+  --color-slate-50:  #F6F4F2;
+  --color-gray-100:  #AB9E8E;
 }
 
 /* ── Base Resets ──────────────────────────────────────── */
@@ -23,8 +25,8 @@ html {
 body {
   font-family: "SF Pro Display", "SF Pro Text", -apple-system,
     BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  color: #0D1F0D;
-  background-color: #FAFAFA;
+  color: #423E3B;
+  background-color: #F6F4F2;
   -webkit-font-smoothing: antialiased;
   line-height: 1.6;
   letter-spacing: -0.015em;
@@ -35,7 +37,7 @@ body {
 @layer components {
   /* Primary CTA button — gold fill */
   .btn-primary {
-    @apply bg-gold-400 hover:bg-gold-600 text-green-950
+    @apply bg-gold-400 hover:bg-green-700 text-white
            font-semibold px-6 py-3 rounded-lg
            transition-colors duration-250 cursor-pointer;
   }
@@ -51,7 +53,7 @@ body {
   /* Ghost button — gold outline for dark backgrounds */
   .btn-ghost-gold {
     @apply border-2 border-gold-400 text-gold-400
-           hover:bg-gold-400 hover:text-green-950
+           hover:bg-gold-400 hover:text-white
            font-semibold px-6 py-3 rounded-lg
            transition-all duration-250 cursor-pointer;
   }
@@ -63,7 +65,8 @@ body {
 
   /* Section heading style */
   .section-title {
-    @apply text-h2 text-green-950 font-bold mb-3;
+    @apply text-h2 font-bold mb-3;
+    color: #423E3B !important;
   }
 
   /* Gold underline accent under headings */
@@ -105,4 +108,96 @@ input[type="number"]::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield; /* Firefox */
 }
+
+/* ── Text Contrast and Global Theme Overrides ── */
+.text-green-950 {
+  color: #423E3B !important;
+}
+.text-green-900 {
+  color: #5A524A !important;
+}
+.text-green-800 {
+  color: #423E3B !important;
+}
+.text-green-700 {
+  color: #423E3B !important;
+}
+.text-green-600 {
+  color: #5A524A !important;
+}
+
+.text-gray-300 {
+  color: #6E6964 !important;
+}
+.text-gray-400 {
+  color: #6E6964 !important;
+}
+.text-gray-200 {
+  color: #423E3B !important;
+}
+
+.border-green-900 {
+  border-color: #AB9E8E !important;
+}
+.border-green-950 {
+  border-color: #AB9E8E !important;
+}
+.border-green-100 {
+  border-color: #AB9E8E !important;
+}
+
+.bg-green-50 {
+  background-color: #F6F4F2 !important;
+}
+.bg-green-50\/50 {
+  background-color: #F6F4F2 !important;
+}
+
+.hover\:text-green-900:hover {
+  color: #423E3B !important;
+}
+.hover\:bg-green-50:hover {
+  background-color: #FAF6EB !important;
+}
+
+/* ── Footer Styling Overrides (Dark Charcoal bg) ── */
+footer, footer p, footer span, footer li, footer div {
+  color: #F6F4F2 !important;
+}
+footer h3 {
+  color: #B4986B !important;
+}
+footer a {
+  color: #F6F4F2 !important;
+}
+footer a:hover {
+  color: #B4986B !important;
+}
+footer svg {
+  color: #B4986B !important;
+}
+footer .text-ink-muted, footer .text-gray-400 {
+  color: #AB9E8E !important;
+}
+footer .flex.items-center.gap-4 a {
+  background-color: rgba(246, 244, 242, 0.08) !important;
+  border-color: rgba(246, 244, 242, 0.15) !important;
+  color: #B4986B !important;
+}
+footer .flex.items-center.gap-4 a:hover {
+  background-color: #B4986B !important;
+  color: #423E3B !important;
+}
+footer .flex.items-center.gap-4 a:hover svg {
+  color: #423E3B !important;
+}
+
+footer a.sbs-quantum-link {
+  color: #B4986B !important;
+}
+footer a.sbs-quantum-link:hover {
+  color: #FAF6EB !important;
+}
+
+
 

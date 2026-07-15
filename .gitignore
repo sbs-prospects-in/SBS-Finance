@@ -28,3 +28,7 @@ dist-ssr
 venv/
 __pycache__/
 database/
+
+# Credentials
+api/services/*.json
+

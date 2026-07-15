@@ -1,5 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import { Sparkles } from 'lucide-react';
 import { SERVICES } from '../../constants/services';
 import { ROUTES } from '../../constants/routes';
 
@@ -62,10 +64,10 @@ function StatItem({ value, label, suffix = '' }) {
 
   return (
     <div ref={itemRef} className="flex flex-col items-center justify-center p-4 text-center px-4">
-      <div className="text-4xl md:text-5xl font-bold text-gold-400 mb-2 font-sans tracking-tight">
+      <div className="text-4xl md:text-5xl font-bold text-green-950 mb-2 font-sans tracking-tight">
         {formattedDisplay}{suffix}
       </div>
-      <div className="text-gray-300 text-sm md:text-base font-medium tracking-wide">
+      <div className="text-green-900 text-sm md:text-base font-medium tracking-wide">
         {label}
       </div>
     </div>
@@ -105,32 +107,35 @@ function Services() {
   return (
     <div className="bg-white pb-24">
       {/* 1. Hero Section */}
-      <section className="relative bg-gradient-to-br from-green-950 via-green-900 to-green-950 text-white pt-32 pb-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
-        {/* Abstract Gold Background Decor */}
+      <section className="relative bg-green-950 text-ink-dark pt-32 pb-24 px-4 sm:px-6 lg:px-8 overflow-hidden border-b border-green-700/10">
         <div className="absolute inset-0 opacity-10 pointer-events-none">
           <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-gold-400 blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
           <div className="absolute bottom-0 left-0 w-80 h-80 rounded-full bg-gold-400 blur-3xl transform -translate-x-1/3 translate-y-1/3"></div>
         </div>
 
-        <div className="max-w-4xl mx-auto relative z-10 text-center flex flex-col items-center">
-          <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gold-400/10 border border-gold-400/25 text-gold-400 text-xs md:text-sm font-bold tracking-widest uppercase mb-10 shadow-sm animate-pulse">
-            Premium Financial Services
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="max-w-4xl mx-auto relative z-10 text-center"
+        >
+          <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-green-700/10 border border-green-700/25 text-green-700 text-xs md:text-sm font-bold tracking-widest uppercase mb-10 shadow-sm animate-pulse">
+            <Sparkles size={16} />
+            <span>Elevate Your Wealth</span>
           </div>
-
-          <h1 className="text-4xl md:text-6xl font-extrabold text-white tracking-tight leading-tight mb-8">
-            Elevate Your <span className="text-gold-400 relative after:content-[''] after:absolute after:bottom-1 after:left-0 after:w-full after:h-1 after:bg-gold-400/40">Financial Journey</span>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 font-sans tracking-tight">
+            Elevate Your <span className="text-green-700 relative after:content-[''] after:absolute after:bottom-1 after:left-0 after:w-full after:h-1 after:bg-green-700/40">Financial Journey</span>
           </h1>
-
-          <p className="text-gray-300 text-base md:text-xl leading-relaxed max-w-3xl mx-auto mb-16">
-            Experience sophisticated financial advisory services crafted for discerning clients. Our comprehensive suite of solutions combines time-tested strategies with innovative approaches to deliver exceptional results.
+          <p className="text-ink-muted text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-10">
+            Discover customized financial solutions designed to protect, grow, and manage your assets with transparency and expert advice.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-12 md:gap-24 pt-8 md:pt-12 border-t border-gold-400/20 w-full max-w-2xl mx-auto">
-             <StatItem value="99" label="Client Retention Ratio" suffix="%" />
+             <StatItem value="98" label="Client Retention Ratio" suffix="%" />
              <StatItem value="500" label="Satisfied Clients" suffix="+" />
              <StatItem value="6" label="Years of Excellence" suffix="+" />
           </div>
-        </div>
+        </motion.div>
 
         {/* Decorative Gold Bottom Wave Accent */}
         <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-gold-400 to-transparent opacity-40"></div>

@@ -94,7 +94,7 @@ function Footer() {
   };
 
   return (
-    <footer className="bg-green-950 text-white border-t border-gold-400/15">
+    <footer className="bg-green-700 text-ink-dark border-t border-gold-400/15">
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
@@ -112,7 +112,7 @@ function Footer() {
                 className="w-40 md:w-48 h-auto object-contain group-hover:scale-105 transition-transform duration-250"
               />
             </Link>
-            <p className="text-gray-300 text-sm leading-relaxed">
+            <p className="text-ink-muted text-sm leading-relaxed">
               SBS Financials is a premier financial advisory firm dedicated to guiding clients through wealth generation, strategic investments, and reliable insurance planning.
             </p>
             {/* Social Icons */}
@@ -121,7 +121,7 @@ function Footer() {
                 href="https://www.linkedin.com/company/sbs-financials/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-9 w-9 rounded-full bg-green-700/20 hover:bg-gold-400 hover:text-green-950 flex items-center justify-center text-gold-400 transition-all duration-250 border border-gold-400/10"
+                className="h-9 w-9 rounded-full bg-green-700/10 hover:bg-green-700 hover:text-green-100 flex items-center justify-center text-green-700 transition-all duration-250 border border-green-700/10"
                 aria-label="LinkedIn"
               >
                 <LinkedinIcon size={16} />
@@ -130,7 +130,7 @@ function Footer() {
                 href="https://www.facebook.com/share/1ETodRg3J2/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-9 w-9 rounded-full bg-green-700/20 hover:bg-gold-400 hover:text-green-950 flex items-center justify-center text-gold-400 transition-all duration-250 border border-gold-400/10"
+                className="h-9 w-9 rounded-full bg-green-700/10 hover:bg-green-700 hover:text-green-100 flex items-center justify-center text-green-700 transition-all duration-250 border border-green-700/10"
                 aria-label="Facebook"
               >
                 <FacebookIcon size={16} />
@@ -139,7 +139,7 @@ function Footer() {
                 href="https://www.instagram.com/sbsfinancial?igsh=MW01ZG9pM29obW0xbg=="
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-9 w-9 rounded-full bg-green-700/20 hover:bg-gold-400 hover:text-green-950 flex items-center justify-center text-gold-400 transition-all duration-250 border border-gold-400/10"
+                className="h-9 w-9 rounded-full bg-green-700/10 hover:bg-green-700 hover:text-green-100 flex items-center justify-center text-green-700 transition-all duration-250 border border-green-700/10"
                 aria-label="Instagram"
               >
                 <InstagramIcon size={16} />
@@ -148,7 +148,7 @@ function Footer() {
                 href="https://x.com/services5272"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-9 w-9 rounded-full bg-green-700/20 hover:bg-gold-400 hover:text-green-950 flex items-center justify-center text-gold-400 transition-all duration-250 border border-gold-400/10 font-bold text-xs"
+                className="h-9 w-9 rounded-full bg-green-700/10 hover:bg-green-700 hover:text-green-100 flex items-center justify-center text-green-700 transition-all duration-250 border border-green-700/10 font-bold text-xs"
                 aria-label="Twitter (X)"
               >
                 𝕏
@@ -157,7 +157,7 @@ function Footer() {
                 href="https://youtube.com/@sbsfinancials?si=dKQ9457BVXpHwCHK"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-9 w-9 rounded-full bg-green-700/20 hover:bg-gold-400 hover:text-green-950 flex items-center justify-center text-gold-400 transition-all duration-250 border border-gold-400/10"
+                className="h-9 w-9 rounded-full bg-green-700/10 hover:bg-green-700 hover:text-green-100 flex items-center justify-center text-green-700 transition-all duration-250 border border-green-700/10"
                 aria-label="YouTube"
               >
                 <YoutubeIcon size={16} />
@@ -167,7 +167,7 @@ function Footer() {
 
           {/* Column 2: Quick Links */}
           <div className="flex flex-col gap-5">
-            <h3 className="text-gold-400 font-bold text-base tracking-wider relative after:content-[''] after:block after:w-8 after:h-0.5 after:bg-gold-400 after:mt-2">
+            <h3 className="text-green-700 font-bold text-base tracking-wider relative after:content-[''] after:block after:w-8 after:h-0.5 after:bg-green-700 after:mt-2">
               QUICK LINKS
             </h3>
             <ul className="flex flex-col gap-3">
@@ -187,9 +187,9 @@ function Footer() {
                         window.scrollTo({ top: 0, behavior: 'smooth' });
                       }
                     }}
-                    className="text-gray-300 hover:text-gold-400 text-sm flex items-center gap-1.5 transition-colors duration-200 group"
+                    className="text-ink-dark hover:text-green-700 text-sm flex items-center gap-1.5 transition-colors duration-200 group"
                   >
-                    <ArrowRight size={12} className="text-gold-400 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200" />
+                    <ArrowRight size={12} className="text-green-700 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200" />
                     <span>{link.label}</span>
                   </Link>
                 </li>
@@ -199,7 +199,7 @@ function Footer() {
 
           {/* Column 3: Our Services */}
           <div className="flex flex-col gap-5">
-            <h3 className="text-gold-400 font-bold text-base tracking-wider relative after:content-[''] after:block after:w-8 after:h-0.5 after:bg-gold-400 after:mt-2">
+            <h3 className="text-green-700 font-bold text-base tracking-wider relative after:content-[''] after:block after:w-8 after:h-0.5 after:bg-green-700 after:mt-2">
               OUR SERVICES
             </h3>
             <ul className="grid grid-cols-1 gap-2.5">
@@ -218,9 +218,9 @@ function Footer() {
                         }
                       }
                     }}
-                    className="text-gray-300 hover:text-gold-400 text-sm flex items-center gap-1.5 transition-colors duration-200 group"
+                    className="text-ink-dark hover:text-green-700 text-sm flex items-center gap-1.5 transition-colors duration-200 group"
                   >
-                    <ArrowRight size={12} className="text-gold-400 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200" />
+                    <ArrowRight size={12} className="text-green-700 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200" />
                     <span className="line-clamp-1">{service.title}</span>
                   </Link>
                 </li>
@@ -230,33 +230,33 @@ function Footer() {
 
           {/* Column 4: Contact Info */}
           <div className="flex flex-col gap-5">
-            <h3 className="text-gold-400 font-bold text-base tracking-wider relative after:content-[''] after:block after:w-8 after:h-0.5 after:bg-gold-400 after:mt-2">
+            <h3 className="text-green-700 font-bold text-base tracking-wider relative after:content-[''] after:block after:w-8 after:h-0.5 after:bg-green-700 after:mt-2">
               CONTACT INFO
             </h3>
-            <ul className="flex flex-col gap-4 text-sm text-gray-300">
+            <ul className="flex flex-col gap-4 text-sm text-ink-dark">
               <li className="flex items-start gap-3">
-                <MapPin size={18} className="text-gold-400 shrink-0 mt-0.5" />
-                <a href="https://maps.google.com/maps?q=1003,%20Span%20Trade%20Center,%20Paldi%20Rd,%20Near%20Bony%20Travels,%20Pritam%20Nagar,%20Paldi,%20Ahmedabad,%20Gujarat%20380006" target="_blank" rel="noopener noreferrer" className="leading-relaxed hover:text-gold-400 transition-colors duration-200">
+                <MapPin size={18} className="text-green-700 shrink-0 mt-0.5" />
+                <a href="https://maps.google.com/maps?q=1003,%20Span%20Trade%20Center,%20Paldi%20Rd,%20Near%20Bony%20Travels,%20Pritam%20Nagar,%20Paldi,%20Ahmedabad,%20Gujarat%20380006" target="_blank" rel="noopener noreferrer" className="leading-relaxed hover:text-green-700 transition-colors duration-200 text-ink-dark">
                   1003, Span Trade Centre, Paldi Rd, <br />Near Bony Travels, Pritam Nagar, Paldi,<br /> Ahmedabad, Gujarat 380006
                 </a>
               </li>
               <li className="flex items-center gap-3 group cursor-pointer w-fit" onClick={handleCopyPhone}>
-                {copied ? <Check size={18} className="text-green-500 shrink-0" /> : <Phone size={18} className="text-gold-400 shrink-0 group-hover:text-green-500 transition-colors duration-200" />}
-                <span className={`transition-colors duration-200 ${copied ? 'text-green-500' : 'group-hover:text-white'}`}>
+                {copied ? <Check size={18} className="text-green-500 shrink-0" /> : <Phone size={18} className="text-green-700 shrink-0 group-hover:text-green-700 transition-colors duration-200" />}
+                <span className={`transition-colors duration-200 ${copied ? 'text-green-500' : 'group-hover:text-green-700'}`}>
                   {copied ? 'Copied!' : '+91 90813 53523'}
                 </span>
               </li>
               <li className="flex items-center gap-3">
-                <Mail size={18} className="text-gold-400 shrink-0" />
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sbsfin27@gmail.com" target="_blank" rel="noopener noreferrer" className="hover:text-gold-400 transition-colors duration-200">
+                <Mail size={18} className="text-green-700 shrink-0" />
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sbsfin27@gmail.com" target="_blank" rel="noopener noreferrer" className="hover:text-green-700 transition-colors duration-200 text-ink-dark">
                   sbsfin27@gmail.com
                 </a>
               </li>
               <li className="flex items-start gap-3">
-                <Clock size={18} className="text-gold-400 shrink-0 mt-0.5" />
+                <Clock size={18} className="text-green-700 shrink-0 mt-0.5" />
                 <span>
-                  Mon - Sat: 10:00 AM - 8:00 PM<br />
-                  <span className="text-xs text-gray-400">Sun: On Advance Appointment Basis</span>
+                  Mon - Sat: 10:00 AM - 7:00 PM<br />
+                  <span className="text-xs text-ink-muted">Sun: On Advance Appointment Basis</span>
                 </span>
               </li>
             </ul>
@@ -265,17 +265,28 @@ function Footer() {
       </div>
 
       {/* Bottom Copyright Bar */}
-      <div className="border-t border-gold-400/10 py-6 bg-green-950/80">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400">
-          <div>
-            &copy; {new Date().getFullYear()} SBS Financials. All rights reserved.
+      <div className="border-t border-gold-400/10 py-6 bg-black/15">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-ink-muted">
+          <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4">
+            <span>&copy; {new Date().getFullYear()} SBS Financials. All rights reserved.</span>
+            <span className="hidden md:inline text-gold-400/20">|</span>
+            <span>
+              Managed by{' '}
+              <a
+                href="https://www.sbsquantum.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="sbs-quantum-link transition-colors duration-200 underline underline-offset-4"
+              >
+                SBS Quantum
+              </a>
+            </span>
           </div>
           <div className="flex gap-6">
-            <Link to={ROUTES.HOME} className="hover:text-gold-400 transition-colors duration-200">
+            <Link to={ROUTES.PRIVACY} className="hover:text-green-700 text-ink-dark transition-colors duration-200">
               Privacy Policy
             </Link>
-            <span>&middot;</span>
-            <Link to={ROUTES.HOME} className="hover:text-gold-400 transition-colors duration-200">
+            <Link to={ROUTES.TERMS} className="hover:text-green-700 text-ink-dark transition-colors duration-200">
               Terms of Use
             </Link>
           </div>

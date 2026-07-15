@@ -13,6 +13,8 @@ const Contact = lazy(() => import('./pages/contact/contact'));
 const Calculator = lazy(() => import('./pages/calculator/calculator'));
 const About = lazy(() => import('./pages/About/About'));
 const Services = lazy(() => import('./pages/Services/Services'));
+const Privacy = lazy(() => import('./pages/Privacy/Privacy'));
+const Terms = lazy(() => import('./pages/Terms/Terms'));
 
 import { ROUTES } from './constants/routes';
 
@@ -54,6 +56,8 @@ function App() {
                 <Route path={ROUTES.SERVICES} element={<Services />} />
                 <Route path={ROUTES.CALCULATORS} element={<Calculator />} />
                 <Route path={ROUTES.CONTACT} element={<Contact />} />
+                <Route path={ROUTES.PRIVACY} element={<Privacy />} />
+                <Route path={ROUTES.TERMS} element={<Terms />} />
               </Routes>
             </Suspense>
           </main>
